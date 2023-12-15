@@ -249,7 +249,8 @@ def choiceA5():
 def choiceB1():
     prob_spiderright_K1_L1_M1_B2()
 def choiceB2():
-    ("it hears you and kills you")
+    print("It hears you and deems you delicious")
+    you_die()
 
 def choiceC1():
     prob_cavebugs_C2_D1()
@@ -258,23 +259,25 @@ def choiceC2():
     prob_ladyliberty_C3_D2()
 
 def choiceC3():
-    print("you get high and doze off to sleep")
-
-
+    print("You get high and doze off to sleep")
+    start_game()
 def choiceD1():
     print("They bite you when you brush them off, they are venomous and you are poisoned")
     you_die()
 def choiceD2():
-    print("don't eat moss and remain hungry, you eventuly starve")
-
+    print("Don't eat moss and remain hungry, you eventually starve")
+    you_die()
 def choiceE1():
-    print("your hungry stomach makes a load noise that atracts something you cant see that kills you")
+    print("Your hungry stomach makes a load noise that attracts something you cant see")
+    you_die()
 
 def choiceF1():
-    print("your spear makes a noise as you move. it hears you and kills you")
+    print("Your spear makes a noise as you move, it hears you")
+    you_die()
 
 def choiceG1():
-    print("your spear makes a noise as you move. it hears you and kills you")
+    print("Your spear makes a noise as you move, it hears you")
+    you_die()
 
 def choiceH1():
     prob_storebits_H2_I1()
