@@ -21,7 +21,12 @@ def you_die():
         print("Invalid input")                                              # If the player enters an invalid option, print an error message.
 
 def you_win():
-    print("Congratulations you found the exit, you win!")
+    '''
+    This function prints a message indicating that the player has won and prompts them to play again.
+    :return: None
+    '''
+    print("You turn a corner and have to sheild your eyes from the glaring sunlight.")
+    print("You have successfully survived the cave.")
     while True:
         play_again = input("Would you like to play again? Input y or n:")
         if play_again == "y":
@@ -33,7 +38,17 @@ def you_win():
         print("Invalid input")
 
 def prob_wakeup_A1_B1():
-    print("You wake up dazed and confused in a cave, the entrance has collapsed you must find the exit")
+    '''
+    This function starts the game and the scenario where the player wakes up in a cave and must make a choice to find the exit.
+    :return: None
+    '''
+    print("You blink awake to the sound of slowly dripping water.")
+    print("You look around.")
+    print("You are laying on your back in the mouth of a cave.")
+    print("Fresh dust settles around you and rubble tumbles off of you as you get up.")
+    print("The exit is sealed shut.")
+    print(" ")
+    print("If you stay here you will die.")
     print("1: Feel along the wall of the cave")
     print("2: Follow the smell of food")
     while True:
@@ -48,7 +63,8 @@ def prob_wakeup_A1_B1():
 
 
 def prob_findstuff_A2_C1():
-    print("You find a stick, a sharp rock, a rag, and a lighter")
+    print("You feel along the cave wall. After a few minutes you stumble on something in the dark.")
+    print("Crouching down, you can feel the shapes of a rag, a lighter, a stick, and a sharp rock.")
     print("1: Make a spear")
     print("2: Make a torch")
     while True:
@@ -62,8 +78,10 @@ def prob_findstuff_A2_C1():
         print("Invalid input")
 
 def prob_stillhungry_A3_E1():
-    print("You can still smell food")
-    print("1: Follow it")
+    print("You smell something in the air as you continue through the cave.")
+    print("It smells like fresh meat right before it's roasted on a spit.")
+    print("Your stomach growls.")
+    print("1: Follow the smell")
     print("2: Ignore hunger")
     while True:
         selectA3E1 = input("Input 1 or 2:")
@@ -80,7 +98,11 @@ def prob_stillhungry_A3_E1():
         print("Invalid input")
 
 def prob_spiderleft_A4_F1_G1():
-    print("You encounter a giant cave spider busy wrapping what looks like a boar carcass in webs, its eyes are cloudy with disuse (it is blind)")
+    print("You follow the smell.")
+    print("As you turn the corner, you see a gigantic spider busily wrapping what looks like a boar's carcass in webs.")
+    print("Its mandibles drip with saliva that hisses as it touches the wrappings.")
+    print("Its eyes are cloudy with disuse.")
+    print("Along the walls you can see more wrapped carcasses.")
     print("1: Try to fight it")
     print("2: Try to sneak past it")
     print("3: Try to get food from the piles of other carcasses")
@@ -106,7 +128,9 @@ def prob_spiderleft_A4_F1_G1():
         print("Invalid input")
         
 def prob_boarbits_A5_H1():
-    print("You successfully kill the spider with your spear but you are injured you take off a piece of the boar")
+    print("You slash at the spider with your spear.")
+    print("It shrieks in pain as you make contact, whipping around to snap its mandibles at you.")
+    print("Spittle flecks your cheeks. Its burns and you can feel your skin corroding.")
     print("1: Eat it raw")
     print("2: Store the meat for later")
     while True:
