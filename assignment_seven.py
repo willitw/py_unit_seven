@@ -1,18 +1,24 @@
-def start_game():
-    prob_wakeup_A1_B1()
+# assignment_seven
+# Liam Toebbe & Twig Williams
+# 12/15/23
+# This program plays a text adventure game, that based in a cave where you must make correct choices to find the exit
 
 
 def you_die():
-    print("You died, better luck next time")
-    while True:
-        play_again = input("Would you like to play again? Input y or n:")
-        if play_again == "y":
-            start_game()
-            exit()
-        if play_again == "n":
-            print("We'll be here waiting when you change your mind")
-            exit()
-        print("Invalid input")
+    '''
+    This function prints a message indicating that the player has died and prompts them to play again.
+    :return: None
+    '''
+    print("You died, better luck next time!")
+    while True:                                                             # Infinite loop to keep prompting the player until valid input is received.
+        play_again = input("Would you like to play again? Input y or n:")   # Prompting the player to choose whether to play again.
+        if play_again == "y":                                               # If the player chooses to play again,
+            start_game()                                                    # Restart the game by calling the start_game function.
+            exit()                                                          # Exit the current function when start_game() is called.
+        if play_again == "n":                                               # If the player chooses not to play again,
+            print("We'll be here waiting when you change your mind.")       # Display a message indicating the game is ready when the player decides to play again.
+            exit()                                                          # Exit the current function when n in inputted after the goodbye message is printed.
+        print("Invalid input")                                              # If the player enters an invalid option, print an error message.
 
 def you_win():
     print("Congratulations you found the exit, you win!")
@@ -22,7 +28,7 @@ def you_win():
             start_game()
             exit()
         if play_again == "n":
-            print("We'll be here waiting when you change your mind")
+            print("We'll be here waiting when you change your mind.")
             exit()
         print("Invalid input")
 
@@ -33,10 +39,10 @@ def prob_wakeup_A1_B1():
     while True:
         selectA1B1 = input("Input 1 or 2:")
         if selectA1B1 == '1':
-            choiceA1()
+            prob_findstuff_A2_C1()
             break
         if selectA1B1 == '2':
-            choiceB1()
+            prob_spiderright_K1_L1_M1_B2()
             break
         print("Invalid input")
 
@@ -48,10 +54,10 @@ def prob_findstuff_A2_C1():
     while True:
         selectA2C1 = input("Input 1 or 2:")
         if selectA2C1 == '1':
-            choiceA2()
+            prob_stillhungry_A3_E1()
             break
         if selectA2C1 =='2':
-            choiceC1()
+            prob_cavebugs_C2_D1()
             break
         print("Invalid input")
 
@@ -62,10 +68,14 @@ def prob_stillhungry_A3_E1():
     while True:
         selectA3E1 = input("Input 1 or 2:")
         if selectA3E1 == '1':
-            choiceA3()
+            prob_spiderleft_A4_F1_G1()
             break
         if selectA3E1 == '2':
-            choiceE1()
+            print("You turn away from the smell and your stomach growls loudly.")
+            print("The sound echoes through the cave, and suddenly you don't feel as alone in the space.")
+            print("Something attacks you from behind, killing you.")
+            print("You never saw it coming.")
+            you_die()
             break
         print("Invalid input")
 
@@ -77,13 +87,21 @@ def prob_spiderleft_A4_F1_G1():
     while True:
         selectA4F1G1 = input("Input 1, 2, or 3:")
         if selectA4F1G1 == '1':
-            choiceA4()
+            prob_boarbits_A5_H1()
             break
         if selectA4F1G1 == '2':
-            choiceF1()
+            print("You attempt to sneak past it.")
+            print("As you move, your spear scrapes against the stone floor.")
+            print("The sound is faint, but not faint enough.")
+            print("A few minutes later, you lie still next to the other carcasses.")
+            you_die()
             break
         if selectA4F1G1 == '3':
-            choiceG1()
+            print("You attempt to sneak past it.")
+            print("As you move, your spear scrapes against the stone floor.")
+            print("The sound is faint, but not faint enough.")
+            print("A few minutes later, you lie still next to the other carcasses.")
+            you_die()
             break
         print("Invalid input")
         
@@ -94,10 +112,11 @@ def prob_boarbits_A5_H1():
     while True:
         selectA5H1 = input("Input 1 or 2:")
         if selectA5H1 == '1':
-            choiceA5()
+            print("you get a rush of energy and find the light at the end of the tunel") #MAKE THIS SOUND BETTE RLAIM PLEASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            you_win()
             break
         if selectA5H1 == '2':
-            choiceH1()
+            prob_storebits_H2_I1()
             break
         print("Invalid input")
         
@@ -108,10 +127,11 @@ def prob_storebits_H2_I1():
     while True:
         selectH2I2 = input("Input 1 or 2:")
         if selectH2I2 == '1':
-            choiceH2()
+            prob_blindattack_H3_J1()
             break
         if selectH2I2 == '2':
-            choiceI1()
+            print("You keep walking forward but get hungry you try to eat your raw meat you saved but die from food poisoning")
+            you_die()
             break
         print("Invalid input")
         
@@ -122,10 +142,12 @@ def prob_blindattack_H3_J1():
     while True:
         selectH3J1 = input("Input 1 or 2:")
         if selectH3J1 == '1':
-            choiceH3()
+            print("It eats you and your boar drumstick")
+            you_die()
             break
         if selectH3J1 == '2':
-            choiceJ1()
+            print("It eats you and your boar drumstick")
+            you_die()
             break
         print("Invalid input")
 
@@ -136,10 +158,11 @@ def prob_cavebugs_C2_D1():
     while True:
         selectC2D1 = input("Input 1 or 2:")
         if selectC2D1 == '1':
-            choiceC2()
+            prob_ladyliberty_C3_D2()
             break
         if selectC2D1 == '2':
-            choiceD1()
+            print("They bite you when you brush them off, they are venomous and you are poisoned")
+            you_die()
             break
         print("Invalid input")
 
@@ -150,10 +173,12 @@ def prob_ladyliberty_C3_D2():
     while True:
         selectC3D2 = input("Input 1 or 2:")
         if selectC3D2 == '1':
-            choiceC3()
+            print("You get high and doze off to sleep")
+            start_game()
             break
         if selectC3D2 == '2':
-            choiceD2()
+            print("Don't eat moss and remain hungry, you eventually starve")
+            you_die()
             break
         print("Invalid input")
 
@@ -166,16 +191,19 @@ def prob_spiderright_K1_L1_M1_B2():
     while True:
         selectK1L1M1B2 = input("Input 1, 2, 3, or 4:")
         if selectK1L1M1B2 == '1':
-            choiceK1()
+            print("You are unarmed and not strong enough to kill it")
+            you_die()
             break
         if selectK1L1M1B2 == '2':
-            choiceL1()
+            prob_behindyou_L2_N1()
             break
         if selectK1L1M1B2 == '3':
-            choiceM1()
+            print("You step on an old scapula bone, it hears you")
+            you_die()
             break
         if selectK1L1M1B2 == '4':
-            choiceB2()
+            print("It hears you and deems you delicious")
+            you_die()
             break
         print("Invalid input")
 
@@ -186,10 +214,11 @@ def prob_behindyou_L2_N1():
     while True:
         selectL2N1 = input("Input 1 or 2:")
         if selectL2N1 == '1':
-            choiceL2()
+            prob_3paths_L3_O1_P1()
             break
         if selectL2N1 == '2':
-            choiceN1()
+            print("It smells you and deems you delicious")
+            you_die()
             break
         print("Invalid input")
 
@@ -201,13 +230,15 @@ def prob_3paths_L3_O1_P1():
     while True:
         selectL3O1P1 = input("Input 1, 2, or 3:")
         if selectL3O1P1 == '1':
-            choiceL3()
+            print("Dead end, there is nowhere to go")
+            you_die()
             break
         if selectL3O1P1 == '2':
-            choiceO1()
+            print("You see a bright light at the end of the tunnel")
+            you_win()
             break
         if selectL3O1P1 == '3':
-            choiceP1()
+            prob_3morepaths_P2_Q1_R1()
             break
         print("Invalid input")
 
@@ -219,124 +250,20 @@ def prob_3morepaths_P2_Q1_R1():
     while True:
         selectP2Q1R1 = input("Input 1, 2, or 3:")
         if selectP2Q1R1 == '1':
-            choiceP2()
+            print("You see a bright light at the end of the tunnel")
+            you_win()
             break
         if selectP2Q1R1 == '2':
-            choiceQ1()
+            print("Dead end, there is nowhere to go")
+            you_die()
             break
         if selectP2Q1R1 == '3':
-            choiceR1()
+            print("You trip and it finds you")
+            you_die()
             break
         print("Invalid input")
 
-# ADD DEF CHOICES INTO DEF PROBS
-# EDIT RESPODES
-# DOCUMENT CODE
-# ADD THE SHIT TOP THE TOP
-# ADD PUNCUATION
-
-def choiceA1():
-    prob_findstuff_A2_C1()
-def choiceA2():
-    prob_stillhungry_A3_E1()
-def choiceA3():
-    prob_spiderleft_A4_F1_G1()
-def choiceA4():
-    prob_boarbits_A5_H1()
-def choiceA5():
-    print("You are no longer hungry and have a rush of energy, you keep venturing on and see a bright light at the end of the tunnel")
-    you_win()
-def choiceB1():
-    prob_spiderright_K1_L1_M1_B2()
-def choiceB2():
-    print("It hears you and deems you delicious")
-    you_die()
-
-def choiceC1():
-    prob_cavebugs_C2_D1()
-
-def choiceC2():
-    prob_ladyliberty_C3_D2()
-
-def choiceC3():
-    print("You get high and doze off to sleep")
-    start_game()
-def choiceD1():
-    print("They bite you when you brush them off, they are venomous and you are poisoned")
-    you_die()
-def choiceD2():
-    print("Don't eat moss and remain hungry, you eventually starve")
-    you_die()
-def choiceE1():
-    print("Your hungry stomach makes a load noise that attracts something you cant see")
-    you_die()
-
-def choiceF1():
-    print("Your spear makes a noise as you move, it hears you")
-    you_die()
-
-def choiceG1():
-    print("Your spear makes a noise as you move, it hears you")
-    you_die()
-
-def choiceH1():
-    prob_storebits_H2_I1()
-
-def choiceH2():
-    prob_blindattack_H3_J1()
-
-def choiceH3():
-    print("It eats you and your boar drumstick")
-    you_die()
-
-def choiceI1():
-    print("You keep walking forward but get hungry you try to eat your raw meat you saved but die from food poisoning")
-    you_die()
-
-def choiceJ1():
-    print("It eats you and your boar drumstick")
-    you_die()
-
-def choiceK1():
-    print("You are unarmed and not strong enough to kill it")
-    you_die()
-
-def choiceL1():
-    prob_behindyou_L2_N1()
-
-def choiceL2():
-    prob_3paths_L3_O1_P1()
-
-def choiceL3():
-    print("Dead end, there is nowhere to go")
-    you_die()
-
-def choiceM1():
-    print("You step on an old scapula bone, it hears you")
-    you_die()
-
-def choiceN1():
-    print("It smells you and deems you delicious")
-    you_die()
-
-def choiceO1():
-    print("You see a bright light at the end of the tunnel")
-    you_win()
-def choiceP1():
-    prob_3morepaths_P2_Q1_R1()
-
-def choiceP2():
-    print("You see a bright light at the end of the tunnel")
-    you_win()
-def choiceQ1():
-    print("Dead end, there is nowhere to go")
-    you_die()
-
-def choiceR1():
-    print("You trip and it finds you")
-    you_die()
-
 def main():
-    start_game()
+    prob_wakeup_A1_B1()         # Starts the game by calling the first problem function.
 
 main()
