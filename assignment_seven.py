@@ -139,12 +139,19 @@ def prob_boarbits_A5_H1():
     print("You slash at the spider with your spear.")
     print("It shrieks in pain as you make contact, whipping around to snap its mandibles at you.")
     print("Spittle flecks your cheeks. Its burns and you can feel your skin corroding.")
+    print("Fuelled by adrenaline, you stab forwards with the spear. It sinks to the hilt in the spider's abdomen.")
+    print("What little light there was behind its murky eyes dims and it slumps forward, dead.")
+    print("You scramble out from underneath it.")
+    print(" ")
+    print("The smell from before suffuses from the boar. You use your spear to carve off a shank of meat.")
     print("1: Eat it raw")
     print("2: Store the meat for later")
     while True:
         selectA5H1 = input("Input 1 or 2:")
         if selectA5H1 == '1':
-            print("you get a rush of energy and find the light at the end of the tunel") #MAKE THIS SOUND BETTE RLAIM PLEASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            print("You eat the meat raw.")
+            print("Your stomach begins to settle and you continue through the cave.")
+            print("Your vision becomes clearer and you realize that it's not as dim as it was before.")
             you_win()
             break
         if selectA5H1 == '2':
@@ -153,7 +160,8 @@ def prob_boarbits_A5_H1():
         print("Invalid input")
         
 def prob_storebits_H2_I1():
-    print("Store the meet for later")
+    print(" ")
+    print("You store the meat for later. Maybe you'll find some wood to roast it on.")
     print("1: Go back")
     print("2: Continue past spider's den")
     while True:
@@ -162,13 +170,22 @@ def prob_storebits_H2_I1():
             prob_blindattack_H3_J1()
             break
         if selectH2I2 == '2':
-            print("You keep walking forward but get hungry you try to eat your raw meat you saved but die from food poisoning")
+            print("As you continue, your stomach keeps getting louder.")
+            print("Soon, the hunger pangs become unbearable.")
+            print("You claw at your pocket, looking for the meat, but your grasping fingers slip through the hole in your pocket.")
+            print("The hole that wasn't there before.")
+            print("You feel your breath start to quicken but you're bowled over by the next wave of pain.")
+            print("Starvation is not a very pleasant way to die, you come to find.")
             you_die()
             break
         print("Invalid input")
         
 def prob_blindattack_H3_J1():
-    print("You smell like food and something you can't see attacks, you are severely injured but alive")
+    print(" ")
+    print("You turn back to the chamber you came from.")
+    print("Your footsteps falter as you hear something behind you.")
+    print("You whip around, but whatever it is is faster than you.")
+    print("What might be claws or teeth or any variation of unknown horrors slashes through your shoulder.")
     print("1: Run")
     print("2: Swing wildly with your spear")
     while True:
